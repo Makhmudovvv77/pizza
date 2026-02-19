@@ -1,0 +1,102 @@
+body{
+    background: linear-gradient(to right,#1C0C00,#1C0700,#140900,#1C0C00);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    /* background: linear-gradient(to right, #2b0b00, #3b1400); */
+    padding: 20px 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff7a00;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 16px;
+    position: relative;
+    /* color: #ff7a00; */
+    transition: 0.5s;
+}
+
+.menu ul li a:hover {
+    color: #ff7a00;
+}
+
+/* Aktiv menyu uchun nuqta */
+.aktiv a {
+    color: #ff7a00;
+}
+
+.aktiv a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 6px;
+    background-color: #ff7a00;
+    border-radius: 50%;
+}
+
+.ong-tomon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.login-btn {
+    background: linear-gradient(to right, #ff8a00, #ff4d00);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    opacity: 0.8;
+}
+
+.savat {
+    background: linear-gradient(to right, #ff8a00, #ff4d00);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.fa-solid  {
+   color: white;
+    font-size: 18px;
+}
